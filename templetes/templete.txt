@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+
+public class Main {
+	public static int solution(int n) {
+        return 0;
+    }
+
+	public static void main(String args[]) throws IOException {
+		// BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
+		StringBuilder sb = new StringBuilder();
+		StringTokenizer st;
+
+		// 한 줄의 값 전체를 받는 경우
+		int N = Integer.parseInt(reader.readLine());
+
+		// 한 줄의 값을 띄어쓰기로 구분되어 받는 경우
+		st = new StringTokenizer(reader.readLine());
+		int a = Integer.parseInt(st.nextToken());
+		
+		// 한 줄의 값이 띄어쓰기로 구분되어있지 않은 경우
+		int[] tmp = word.split("");
+
+		// 출력
+		int ans = solution(0);
+		sb.append(ans).append("\n");
+		System.out.println(sb);
+		reader.close();
+	}
+}
